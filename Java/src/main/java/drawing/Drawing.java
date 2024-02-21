@@ -9,8 +9,6 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.List;
 
-import javax.xml.catalog.CatalogFeatures.Feature;
-
 /**
  * Refactor Task 3: (Mis-)Shaped
  *

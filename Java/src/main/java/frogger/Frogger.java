@@ -1,7 +1,5 @@
 package frogger;
 
-import javax.xml.catalog.CatalogFeatures.Feature;
-
 /**
  * Refactor Task 1 & 2: Frogger
  *
