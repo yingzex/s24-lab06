@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.List;
 
+import javax.xml.catalog.CatalogFeatures.Feature;
+
 /**
  * Refactor Task 3: (Mis-)Shaped
  *
@@ -34,6 +36,9 @@ public class Drawing {
             try (Writer writer = new JPEGWriter(filename + ".jpeg")) {
                 for (Shape shape : this.shapes) {
                     // TODO: What is the issue of the behavior here?
+                    // Message chains: one method makes a series of calls on the return values of
+                    // another. Think of the CardDeck → FlashCard.getStatus() →
+                    // CardStatus.getSuccesses example from the midterm.
                     Line[] lines = shape.toLines();
                     shape.draw(writer, lines);
                 }
@@ -52,4 +57,3 @@ public class Drawing {
         }
     }
 }
-

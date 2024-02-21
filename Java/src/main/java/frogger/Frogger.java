@@ -1,5 +1,7 @@
 package frogger;
 
+import javax.xml.catalog.CatalogFeatures.Feature;
+
 /**
  * Refactor Task 1 & 2: Frogger
  *
@@ -43,6 +45,9 @@ public class Frogger {
         return true;
     }
 
+    // Feature envy: when one class uses a lot of another’s functionality. This
+    // strongly indicates that some of the work being done in the former belongs in
+    // the latter (information expert).
     // // TODO: Do you notice any issues here?
     // public boolean isOccupied(int position) {
     // boolean[] occupied = this.road.getOccupied();

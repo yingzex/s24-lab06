@@ -26,6 +26,7 @@ public class Records {
      * @param gender      gender of the frogger
      * @return Return false if the record has existed. Else, return true.
      */
+    // Long parameter list: a long list of parameters provided to a method.
     public boolean addRecord(String firstName, String lastName, String phoneNumber,
             String zipCode, String state, String gender) {
         FroggerID newRecord = new FroggerID(firstName, lastName, phoneNumber, zipCode, state, gender);
